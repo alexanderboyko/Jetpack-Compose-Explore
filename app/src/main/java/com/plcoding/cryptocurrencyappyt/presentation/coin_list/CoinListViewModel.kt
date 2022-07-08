@@ -40,4 +40,12 @@ class CoinListViewModel @Inject constructor(
             }
         }.launchIn(viewModelScope)
     }
+
+    fun handleEvent(event: CoinListEvents) {
+        when (event) {
+            OnGreetingDialogClose -> {
+                _state.value = _state.value.copy(greetingDialogVisible = false)
+            }
+        }
+    }
 }

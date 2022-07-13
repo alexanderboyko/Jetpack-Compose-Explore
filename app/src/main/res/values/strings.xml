@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CryptocurrencyAppYT</string>
+    <string name="greetings">Hi, this is Jetpack Compose playground</string>
+    <string name="password_visibility">Password visibility</string>
+    <string name="password">Password</string>
 </resources>

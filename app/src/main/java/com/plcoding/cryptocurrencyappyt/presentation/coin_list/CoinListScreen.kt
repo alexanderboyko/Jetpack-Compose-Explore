@@ -18,7 +18,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.plcoding.cryptocurrencyappyt.presentation.Screen
 import com.plcoding.cryptocurrencyappyt.presentation.coin_list.components.CoinListItem
-import com.plcoding.cryptocurrencyappyt.presentation.coin_list.components.GreetingScreen
+import com.plcoding.cryptocurrencyappyt.presentation.coin_list.components.GreetingsDialog
 
 @Composable
 fun CoinListScreen(
@@ -29,7 +29,7 @@ fun CoinListScreen(
 
     Box(modifier = Modifier.fillMaxSize()) {
         if (state.greetingDialogVisible) {
-            GreetingScreen {
+            GreetingsDialog(navController) {
                 viewModel.handleEvent(OnGreetingDialogClose)
             }
         }
